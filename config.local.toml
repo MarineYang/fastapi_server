@@ -1,0 +1,24 @@
+[WebServerConfig]
+server_name = "quiz_system"
+host = "0.0.0.0"
+port = 8000
+is_web_server = false
+is_ssl = true
+
+
+[JwtToken]
+access_key = "quiz_system_access"
+refresh_key = "quiz_system_refresh"
+access_expire_min = 480
+# access_expire_min = 1
+refresh_expire_day = 7
+check_duplicate = false
+
+
+[DataBaseConfig]
+db_host = "localhost"
+db_port = "5432"
+db_name = "quiz_db"
+db_username = "marineyang" 
+db_password = "marineyang"
+
